@@ -1,0 +1,28 @@
+#app {
+    border: 2px solid red;
+}
+
+#app > * {
+    height: 300px;
+}
+
+aside {
+    background-color: lightcoral;
+
+    float: left;
+    width: 33%;
+}
+
+main {
+    background-color: lightgreen;
+
+    float: left;
+    width: 33%;
+}
+
+.toc {
+    background-color: lightskyblue;
+
+    float: right;
+    width: 34%; /* penyebab ukuran tidak rata seperti child element lain */
+}
