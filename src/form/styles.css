@@ -76,3 +76,13 @@ input[type="file"] {
 .inline {
   display: inline;
 }
+
+.main-form {
+  width: 80%;
+  background-color: rgb(42, 72, 157);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 20px;
+}

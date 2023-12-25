@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Formulir Penjurusan Prodi Informatika</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="title-form">
+    <h1 id="title">Formulir Penjurusan</h1>
+    <p id="description">Masukkan informasi yang tertera berikut ini</p>
+</div>
+<form method="post" id="survey-form" class="main-form">
+    <!-- Membuat field set  -->
+    <fieldset>
+        <label for="name" id="name-label"
+        >Nama Lengkap<input
+                id="name"
+                name="survey-form"
+                type="text"
+                placeholder="ex:Jaka Sembung"
+                required
+        /></label>
+        <label for="email" id="email-label"
+        >Email
+            <input
+                    type="email"
+                    name="survey-form"
+                    id="email"
+                    pattern=".+@example\.com"
+                    size="30"
+                    placeholder="ex:@mr123@gmail.com"
+                    required
+            /></label>
+        <label for="umur" id="number-label"
+        >Umur:<input
+                type="number"
+                id="number"
+                name="survey-form"
+                min="0"
+                max="100"
+                placeholder="ex:15"
+                required
+        /></label>
+
+        <label for="select" id="select-label"> Penjurusan</label>
+        <select name="select-label" id="dropdown">
+            <option value="">Pilih Yang anda minati</option>
+            <option value="Minat Jaringan">Jaringan</option>
+            <option value="Minat AI">Mesin Cerdas</option>
+            <option value="Minat Sistem">Pengembangan Sistem</option>
+        </select>
+    </fieldset>
+
+    <!--Membuat field set kedua yang berisi checkbox jenis kelamin-->
+    <fieldset>
+        <legend>Jenis Kelamin (Wajib)</legend>
+        <label for="man-sex"
+        ><input
+                id="man-sex"
+                type="radio"
+                name="sex-radio"
+                class="inline"
+                checked
+                value="man-sex"
+        />Laki - Laki</label
+        >
+        <label for="woman-sex"
+        ><input
+                id="woman-sex"
+                type="radio"
+                name="sex-radio"
+                class="inline"
+                value="woman-sex"
+        />Perempuan</label
+        >
+    </fieldset>
+    <fieldset>
+        <legend>Angkatan (Wajib diisi)</legend>
+        <label for="angk-2021"
+        ><input
+                id="angk-2021"
+                name="angkatan-checkbox"
+                class="inline"
+                value="angk-2021"
+                type="checkbox"
+        />Angkatan 2021</label
+        >
+        <label for="angk-2022"
+        ><input
+                id="angk-2022"
+                name="angkatan-checkbox"
+                class="inline"
+                value="angk-2022"
+                type="checkbox"
+        />Angkatan 2022</label
+        >
+    </fieldset>
+    <fieldset>
+        <label for="alasan-memilih">Alasan memilih</label>
+        <textarea
+                id="alasan-text"
+                name="alasan-text"
+                rows="6"
+                cols="30"
+        ></textarea>
+    </fieldset>
+    <input onclick="buttonClick()" type="submit" id="submit" value="Submit"/>
+</form>
+</body>
+</html>
